@@ -1,0 +1,101 @@
+Customer ID,Age,Gender,Item Purchased,Category,Purchase Amount (USD),Location,Color,Season,Review Rating,Subscription Status,Shipping Type,Discount Applied,Promo Code Used,Previous Purchases,Payment Method,Frequency of Purchases
+1,24,Male,Item_1,Clothing,45.50,CA,Blue,Spring,4,Yes,Express,No,No,2,Credit Card,Monthly
+2,35,Female,Item_2,Accessories,20.00,NY,Red,Summer,5,No,Standard,Yes,No,5,Cash,Weekly
+3,42,Male,Item_3,Footwear,75.00,TX,Black,Fall,3,No,Free Shipping,No,Yes,10,Credit Card,Fortnightly
+4,29,Female,Item_4,Outerwear,120.00,FL,Green,Winter,4,Yes,Express,Yes,No,3,Venmo,Monthly
+5,51,Male,Item_5,Clothing,60.00,WA,Yellow,Spring,5,No,Standard,No,Yes,12,Credit Card,Weekly
+6,22,Female,Item_6,Accessories,15.25,IL,Purple,Summer,4,Yes,Free Shipping,No,No,1,Cash,Monthly
+7,31,Male,Item_7,Footwear,80.99,CA,Black,Fall,2,No,Standard,Yes,Yes,4,Credit Card,Fortnightly
+8,45,Female,Item_8,Outerwear,200.00,NY,Blue,Winter,5,Yes,Express,No,No,20,Venmo,Monthly
+9,27,Male,Item_9,Clothing,35.75,TX,Red,Spring,3,No,Free Shipping,Yes,No,0,Cash,Weekly
+10,38,Female,Item_10,Accessories,25.00,FL,Green,Summer,4,Yes,Standard,No,Yes,7,Credit Card,Fortnightly
+11,47,Male,Item_11,Footwear,95.00,WA,Black,Fall,5,No,Express,No,No,9,Venmo,Monthly
+12,33,Female,Item_12,Outerwear,150.00,IL,Yellow,Winter,4,Yes,Free Shipping,Yes,Yes,6,Credit Card,Weekly
+13,28,Male,Item_13,Clothing,40.00,CA,Purple,Spring,4,No,Standard,No,No,2,Cash,Monthly
+14,39,Female,Item_14,Accessories,22.50,NY,Black,Summer,3,Yes,Express,Yes,No,8,Credit Card,Fortnightly
+15,56,Male,Item_15,Footwear,65.00,TX,Blue,Fall,5,No,Free Shipping,No,Yes,15,Venmo,Monthly
+16,23,Female,Item_16,Outerwear,180.00,FL,Red,Winter,4,Yes,Standard,No,No,1,Cash,Weekly
+17,34,Male,Item_17,Clothing,55.00,WA,Green,Spring,5,No,Express,Yes,Yes,11,Credit Card,Monthly
+18,41,Female,Item_18,Accessories,30.00,IL,Yellow,Summer,4,Yes,Free Shipping,No,No,3,Venmo,Fortnightly
+19,26,Male,Item_19,Footwear,70.00,CA,Black,Fall,2,No,Standard,Yes,No,0,Cash,Weekly
+20,37,Female,Item_20,Outerwear,140.00,NY,Blue,Winter,5,Yes,Express,No,Yes,5,Credit Card,Monthly
+21,29,Male,Item_21,Clothing,48.00,TX,Red,Spring,4,No,Free Shipping,No,No,4,Venmo,Monthly
+22,50,Female,Item_22,Accessories,18.75,FL,Green,Summer,3,Yes,Standard,Yes,No,10,Credit Card,Weekly
+23,32,Male,Item_23,Footwear,82.00,WA,Yellow,Fall,4,No,Express,No,Yes,6,Cash,Fortnightly
+24,43,Female,Item_24,Outerwear,210.00,IL,Purple,Winter,5,Yes,Free Shipping,Yes,No,14,Venmo,Monthly
+25,27,Male,Item_25,Clothing,38.50,CA,Black,Spring,4,No,Standard,No,Yes,2,Credit Card,Weekly
+26,36,Female,Item_26,Accessories,24.00,NY,Blue,Summer,4,Yes,Express,No,No,7,Cash,Monthly
+27,48,Male,Item_27,Footwear,88.00,TX,Red,Fall,5,No,Free Shipping,Yes,Yes,9,Venmo,Fortnightly
+28,30,Female,Item_28,Outerwear,160.00,FL,Green,Winter,4,Yes,Standard,No,No,3,Credit Card,Monthly
+29,44,Male,Item_29,Clothing,52.00,WA,Yellow,Spring,3,No,Express,Yes,No,13,Cash,Weekly
+30,25,Female,Item_30,Accessories,20.50,IL,Black,Summer,5,Yes,Free Shipping,No,Yes,1,Venmo,Fortnightly
+31,35,Male,Item_31,Footwear,77.00,CA,Blue,Fall,4,No,Standard,No,No,5,Credit Card,Monthly
+32,49,Female,Item_32,Outerwear,190.00,NY,Red,Winter,5,Yes,Express,Yes,Yes,17,Cash,Weekly
+33,28,Male,Item_33,Clothing,46.00,TX,Green,Spring,3,No,Free Shipping,No,No,2,Venmo,Monthly
+34,40,Female,Item_34,Accessories,23.99,WA,Yellow,Summer,4,Yes,Standard,Yes,No,8,Credit Card,Fortnightly
+35,52,Male,Item_35,Footwear,68.00,IL,Black,Fall,5,No,Express,No,Yes,12,Venmo,Monthly
+36,21,Female,Item_36,Outerwear,155.00,CA,Blue,Winter,3,Yes,Free Shipping,No,No,0,Cash,Weekly
+37,38,Male,Item_37,Clothing,50.00,NY,Red,Spring,4,No,Standard,Yes,Yes,6,Credit Card,Monthly
+38,46,Female,Item_38,Accessories,26.00,TX,Green,Summer,4,Yes,Express,No,No,10,Venmo,Fortnightly
+39,31,Male,Item_39,Footwear,85.00,WA,Yellow,Fall,5,No,Free Shipping,Yes,No,7,Cash,Monthly
+40,55,Female,Item_40,Outerwear,170.00,IL,Black,Winter,5,Yes,Standard,No,Yes,19,Credit Card,Weekly
+41,24,Male,Item_41,Clothing,42.00,CA,Blue,Spring,4,No,Express,No,No,1,Venmo,Monthly
+42,34,Female,Item_42,Accessories,19.50,NY,Red,Summer,3,Yes,Free Shipping,Yes,No,5,Cash,Fortnightly
+43,45,Male,Item_43,Footwear,79.00,TX,Green,Fall,4,No,Standard,No,Yes,11,Credit Card,Monthly
+44,29,Female,Item_44,Outerwear,130.00,WA,Yellow,Winter,4,Yes,Express,Yes,No,4,Venmo,Weekly
+45,39,Male,Item_45,Clothing,36.75,IL,Black,Spring,3,No,Free Shipping,No,Yes,2,Credit Card,Monthly
+46,27,Female,Item_46,Accessories,21.25,CA,Blue,Summer,5,Yes,Standard,No,No,3,Cash,Fortnightly
+47,37,Male,Item_47,Footwear,90.00,NY,Red,Fall,5,No,Express,Yes,Yes,8,Venmo,Monthly
+48,50,Female,Item_48,Outerwear,175.00,TX,Green,Winter,4,Yes,Free Shipping,No,No,14,Credit Card,Weekly
+49,33,Male,Item_49,Clothing,47.50,WA,Yellow,Spring,4,No,Standard,No,Yes,6,Cash,Monthly
+50,26,Female,Item_50,Accessories,28.00,IL,Black,Summer,4,Yes,Express,No,No,1,Venmo,Fortnightly
+51,43,Male,Item_51,Footwear,73.00,CA,Blue,Fall,3,No,Free Shipping,Yes,No,9,Credit Card,Monthly
+52,31,Female,Item_52,Outerwear,145.00,NY,Red,Winter,5,Yes,Standard,No,Yes,7,Cash,Weekly
+53,22,Male,Item_53,Clothing,39.00,TX,Green,Spring,4,No,Express,Yes,No,0,Venmo,Monthly
+54,48,Female,Item_54,Accessories,27.75,WA,Yellow,Summer,4,Yes,Free Shipping,No,Yes,15,Credit Card,Fortnightly
+55,36,Male,Item_55,Footwear,86.00,IL,Black,Fall,5,No,Standard,No,No,10,Venmo,Monthly
+56,28,Female,Item_56,Outerwear,165.00,CA,Blue,Winter,4,Yes,Express,Yes,No,2,Cash,Weekly
+57,41,Male,Item_57,Clothing,54.00,NY,Red,Spring,3,No,Free Shipping,No,Yes,11,Credit Card,Monthly
+58,30,Female,Item_58,Accessories,29.50,TX,Green,Summer,5,Yes,Standard,Yes,No,4,Venmo,Fortnightly
+59,49,Male,Item_59,Footwear,92.00,WA,Yellow,Fall,4,No,Express,No,Yes,16,Cash,Monthly
+60,25,Female,Item_60,Outerwear,158.00,IL,Black,Winter,5,Yes,Free Shipping,No,No,1,Credit Card,Weekly
+61,35,Male,Item_61,Clothing,44.00,CA,Blue,Spring,4,No,Standard,Yes,No,5,Venmo,Monthly
+62,46,Female,Item_62,Accessories,23.00,NY,Red,Summer,3,Yes,Express,No,Yes,13,Cash,Fortnightly
+63,29,Male,Item_63,Footwear,78.00,TX,Green,Fall,4,No,Free Shipping,Yes,No,6,Credit Card,Monthly
+64,52,Female,Item_64,Outerwear,205.00,WA,Yellow,Winter,5,Yes,Standard,No,Yes,18,Venmo,Weekly
+65,27,Male,Item_65,Clothing,49.00,IL,Black,Spring,4,No,Express,No,No,3,Credit Card,Monthly
+66,38,Female,Item_66,Accessories,31.00,CA,Blue,Summer,5,Yes,Free Shipping,Yes,No,9,Cash,Fortnightly
+67,44,Male,Item_67,Footwear,83.00,NY,Red,Fall,4,No,Standard,No,Yes,12,Venmo,Monthly
+68,23,Female,Item_68,Outerwear,172.00,TX,Green,Winter,3,Yes,Express,No,No,0,Credit Card,Weekly
+69,40,Male,Item_69,Clothing,41.50,WA,Yellow,Spring,4,No,Free Shipping,Yes,No,7,Cash,Monthly
+70,55,Female,Item_70,Accessories,33.00,IL,Black,Summer,5,Yes,Standard,No,Yes,20,Venmo,Fortnightly
+71,26,Male,Item_71,Footwear,76.00,CA,Blue,Fall,4,No,Express,Yes,No,2,Credit Card,Monthly
+72,37,Female,Item_72,Outerwear,162.00,NY,Red,Winter,4,Yes,Free Shipping,No,Yes,8,Cash,Weekly
+73,32,Male,Item_73,Clothing,53.00,TX,Green,Spring,5,No,Standard,No,No,6,Venmo,Monthly
+74,47,Female,Item_74,Accessories,24.50,WA,Yellow,Summer,3,Yes,Express,Yes,No,14,Credit Card,Fortnightly
+75,29,Male,Item_75,Footwear,89.00,IL,Black,Fall,4,No,Free Shipping,No,Yes,5,Venmo,Monthly
+76,34,Female,Item_76,Outerwear,155.50,CA,Blue,Winter,5,Yes,Standard,No,No,3,Cash,Weekly
+77,51,Male,Item_77,Clothing,57.00,NY,Red,Spring,4,No,Express,Yes,No,17,Credit Card,Monthly
+78,28,Female,Item_78,Accessories,21.00,TX,Green,Summer,4,Yes,Free Shipping,No,Yes,2,Venmo,Fortnightly
+79,39,Male,Item_79,Footwear,81.00,WA,Yellow,Fall,5,No,Standard,No,No,9,Cash,Monthly
+80,24,Female,Item_80,Outerwear,148.00,IL,Black,Winter,3,Yes,Express,Yes,Yes,1,Credit Card,Weekly
+81,36,Male,Item_81,Clothing,43.00,CA,Blue,Spring,4,No,Free Shipping,No,No,6,Venmo,Monthly
+82,45,Female,Item_82,Accessories,26.75,NY,Red,Summer,5,Yes,Standard,Yes,No,11,Cash,Fortnightly
+83,31,Male,Item_83,Footwear,74.00,TX,Green,Fall,4,No,Express,No,Yes,7,Credit Card,Monthly
+84,50,Female,Item_84,Outerwear,185.00,WA,Yellow,Winter,5,Yes,Free Shipping,No,No,15,Venmo,Weekly
+85,27,Male,Item_85,Clothing,37.50,IL,Black,Spring,3,No,Standard,Yes,Yes,2,Cash,Monthly
+86,38,Female,Item_86,Accessories,29.99,CA,Blue,Summer,4,Yes,Express,No,No,8,Credit Card,Fortnightly
+87,41,Male,Item_87,Footwear,94.00,NY,Red,Fall,5,No,Free Shipping,No,Yes,13,Venmo,Monthly
+88,29,Female,Item_88,Outerwear,169.00,TX,Green,Winter,4,Yes,Standard,Yes,No,4,Cash,Weekly
+89,35,Male,Item_89,Clothing,51.00,WA,Yellow,Spring,4,No,Express,No,Yes,10,Credit Card,Monthly
+90,47,Female,Item_90,Accessories,25.25,IL,Black,Summer,3,Yes,Free Shipping,No,No,16,Venmo,Fortnightly
+91,30,Male,Item_91,Footwear,72.00,CA,Blue,Fall,4,No,Standard,Yes,No,5,Cash,Monthly
+92,53,Female,Item_92,Outerwear,195.00,NY,Red,Winter,5,Yes,Express,No,Yes,18,Credit Card,Weekly
+93,28,Male,Item_93,Clothing,46.50,TX,Green,Spring,3,No,Free Shipping,No,No,3,Venmo,Monthly
+94,42,Female,Item_94,Accessories,32.00,WA,Yellow,Summer,4,Yes,Standard,Yes,Yes,12,Cash,Fortnightly
+95,25,Male,Item_95,Footwear,66.00,IL,Black,Fall,4,No,Express,No,No,1,Credit Card,Monthly
+96,38,Female,Item_96,Outerwear,159.00,CA,Blue,Winter,5,Yes,Free Shipping,Yes,No,9,Venmo,Weekly
+97,33,Male,Item_97,Clothing,49.99,NY,Red,Spring,4,No,Standard,No,Yes,6,Cash,Monthly
+98,44,Female,Item_98,Accessories,22.00,TX,Green,Summer,3,Yes,Express,Yes,No,11,Credit Card,Fortnightly
+99,29,Male,Item_99,Footwear,87.00,WA,Yellow,Fall,5,No,Free Shipping,No,Yes,7,Venmo,Monthly
+100,52,Female,Item_100,Outerwear,180.00,IL,Black,Winter,4,Yes,Standard,No,No,20,Credit Card,Weekly

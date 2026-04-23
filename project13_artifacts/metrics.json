@@ -1,0 +1,11 @@
+{
+  "results": {
+    "LinearRegression": {
+      "rmse": 10.845380325983509
+    },
+    "RandomForest": {
+      "rmse": 8.113669442636603
+    }
+  },
+  "best": "RandomForest"
+}
