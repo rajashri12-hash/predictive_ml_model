@@ -1,11 +1,15 @@
 import streamlit as st
-from pathlib import Path
-from project13_predictive_app.predict import load_artifacts, predict_from_dict, predict_subscription_from_dict
+from project13_predictive_app.predict import predict_from_dict, predict_subscription_from_dict
 
 
 st.set_page_config(page_title="Predictive Analytics App", layout="centered")
 
 st.title("Predictive Analytics — Purchase & Subscription")
+
+if "prediction_result" not in st.session_state:
+    st.session_state.prediction_result = None
+if "prediction_error" not in st.session_state:
+    st.session_state.prediction_error = None
 
 task = st.radio("Task", ["Predict Amount", "Predict Subscription"])
 
@@ -57,14 +61,38 @@ if submitted:
         "Frequency of Purchases": freq,
     })
     try:
+        st.session_state.prediction_error = None
         if task == "Predict Amount":
             val = predict_from_dict(data)
-            st.metric(label="Predicted Purchase Amount (USD)", value=f"${val:,.2f}")
+            st.session_state.prediction_result = {
+                "task": task,
+                "amount": float(val),
+            }
         else:
             res = predict_subscription_from_dict(data)
-            prob = res['probability']
-            label = res['label']
-            st.metric(label="Subscription Probability (Yes)", value=f"{prob:.2%}")
-            st.write(f"Predicted Subscription Status: **{label}**")
+            st.session_state.prediction_result = {
+                "task": task,
+                "probability": float(res["probability"]),
+                "label": res["label"],
+            }
     except Exception as e:
-        st.error(f"Prediction error: {e}")
+        st.session_state.prediction_result = None
+        st.session_state.prediction_error = str(e)
+
+if st.session_state.prediction_error:
+    st.error(f"Prediction error: {st.session_state.prediction_error}")
+
+if st.session_state.prediction_result:
+    if st.session_state.prediction_result["task"] == "Predict Amount":
+        st.metric(
+            label="Predicted Purchase Amount (USD)",
+            value=f"${st.session_state.prediction_result['amount']:,.2f}",
+        )
+    else:
+        st.metric(
+            label="Subscription Probability (Yes)",
+            value=f"{st.session_state.prediction_result['probability']:.2%}",
+        )
+        st.write(
+            f"Predicted Subscription Status: **{st.session_state.prediction_result['label']}**"
+        )
