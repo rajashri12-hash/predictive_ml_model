@@ -1,4 +1,6 @@
 import streamlit as st
+import traceback
+from pathlib import Path
 from project13_predictive_app.predict import predict_from_dict, predict_subscription_from_dict
 
 
@@ -6,10 +8,28 @@ st.set_page_config(page_title="Predictive Analytics App", layout="centered")
 
 st.title("Predictive Analytics — Purchase & Subscription")
 
+show_debug = st.sidebar.checkbox("Show debug info", value=False)
+artifacts_dir = Path(__file__).resolve().parents[1] / "project13_artifacts"
+
+if show_debug:
+    st.sidebar.write(f"Artifacts dir: {artifacts_dir}")
+    st.sidebar.write(f"Artifacts dir exists: {artifacts_dir.exists()}")
+    required_files = [
+        "model.joblib",
+        "preprocessor.joblib",
+        "classifier.joblib",
+        "classifier_preprocessor.joblib",
+    ]
+    for fname in required_files:
+        fpath = artifacts_dir / fname
+        st.sidebar.write(f"{fname}: {fpath.exists()}")
+
 if "prediction_result" not in st.session_state:
     st.session_state.prediction_result = None
 if "prediction_error" not in st.session_state:
     st.session_state.prediction_error = None
+if "prediction_traceback" not in st.session_state:
+    st.session_state.prediction_traceback = None
 
 task = st.radio("Task", ["Predict Amount", "Predict Subscription"])
 
@@ -62,14 +82,17 @@ if submitted:
     })
     try:
         st.session_state.prediction_error = None
+        st.session_state.prediction_traceback = None
         if task == "Predict Amount":
-            val = predict_from_dict(data)
+            with st.spinner("Calculating amount prediction..."):
+                val = predict_from_dict(data)
             st.session_state.prediction_result = {
                 "task": task,
                 "amount": float(val),
             }
         else:
-            res = predict_subscription_from_dict(data)
+            with st.spinner("Calculating subscription prediction..."):
+                res = predict_subscription_from_dict(data)
             st.session_state.prediction_result = {
                 "task": task,
                 "probability": float(res["probability"]),
@@ -78,9 +101,12 @@ if submitted:
     except Exception as e:
         st.session_state.prediction_result = None
         st.session_state.prediction_error = str(e)
+        st.session_state.prediction_traceback = traceback.format_exc()
 
 if st.session_state.prediction_error:
     st.error(f"Prediction error: {st.session_state.prediction_error}")
+    if show_debug and st.session_state.prediction_traceback:
+        st.code(st.session_state.prediction_traceback, language="text")
 
 if st.session_state.prediction_result:
     if st.session_state.prediction_result["task"] == "Predict Amount":
